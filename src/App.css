@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: false;
+  include: tooltip;
+}
+.tooltip {
+  --tt-bg: var(--color-bg-1);
+
+  &[data-tip]::before {
+    color: var(--color-fg-1);
+    border-radius: 4px;
+    border: solid 1px var(--color-fg-2);
+  }
+}
+
+@theme {
+  --color-bg-1: #0c0f11;
+  --color-bg-2: #191b1d;
+  --color-bg-3: #262829;
+
+  --color-fg-1: #b1b8be;
+  --color-fg-2: #60696f;
+
+  --color-accent-1: #599692;
+  --color-accent-2: #77ddd6;
+
+  --font-display: "supreme", monospace;
+}
+
+@font-face {
+  font-family: "Supreme";
+  src: url("/src/assets/fonts/Supreme-Variable.woff2") format("woff2");
+  font-weight: 100 800;
+  font-display: swap;
+  font-style: normal;
+}

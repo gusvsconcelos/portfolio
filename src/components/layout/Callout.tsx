@@ -1,0 +1,22 @@
+import Button from "../ui/Button";
+import { Send } from "lucide-react";
+
+export default function Callout() {
+  return (
+    <section className="flex flex-col items-center gap-4 p-8 rounded-sm border-solid border border-fg-2">
+      {/*Callout*/}
+      <h2 className="w-80 text-center text-2xl font-semibold text-fg-1">
+        Gostou do que viu e deseja trabalhar comigo?
+      </h2>
+
+      {/*Button*/}
+      <Button
+        content={
+          <>
+            <Send size={16} /> <p>Contato</p>
+          </>
+        }
+      />
+    </section>
+  );
+}
