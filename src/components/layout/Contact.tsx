@@ -1,7 +1,7 @@
 import Button from "../ui/Button";
 import { Send } from "lucide-react";
 
-export default function Callout() {
+export default function Contact() {
   return (
     <section className="flex flex-col items-center gap-4 p-8 rounded-sm border-solid border border-fg-2">
       {/*Callout*/}
