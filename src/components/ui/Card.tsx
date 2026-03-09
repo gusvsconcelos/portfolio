@@ -35,7 +35,7 @@ export default function Card(props: props) {
         {props.button && (
           <a
             href={props.url}
-            className="p-1 rounded-sm border-solid border border-fg-2 text-fg-2 hover:text-accent-1 transition duration-300 tooltip tooltip-right"
+            className="p-1 rounded-sm border-solid border border-fg-2 text-fg-2 tooltip tooltip-right"
             data-tip="Ver mais"
           >
             <ArrowRightIcon />
