@@ -11,7 +11,7 @@ interface props {
 
 export default function Card(props: props) {
   return (
-    <div className="flex items-center gap-4 p-4 rounded-sm border-solid border border-fg-2 hover:border-accent-1 hover:**:text-accent-1 **:transition **:duration-300 transition duration-300 cursor-default">
+    <div className="flex items-center gap-4 p-4 rounded-sm border-solid border border-fg-2 hover:border-accent-1 hover:**:text-accent-1 hover:**:border-accent-1 **:transition **:duration-300 transition duration-300 cursor-default">
       {/*Card thumbnail*/}
       {props.thumbnail && (
         <img
