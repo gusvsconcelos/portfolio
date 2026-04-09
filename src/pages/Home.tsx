@@ -1,17 +1,17 @@
 import Navbar from "../components/layout/Navbar";
 import Header from "../components/layout/Header";
 import Projects from "../components/layout/Projects";
-import Tools from "../components/layout/Tools";
+import About from "../components/layout/About";
 import Contact from "../components/layout/Contact";
 import Footer from "../components/layout/Footer";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
       <Header />
+      <Navbar />
       <Projects />
-      <Tools />
+      <About />
       <Contact />
       <Footer />
     </>

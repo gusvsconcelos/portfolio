@@ -1,19 +1,5 @@
 @import "tailwindcss";
 
-@plugin "daisyui" {
-  themes: false;
-  include: tooltip;
-}
-.tooltip {
-  --tt-bg: var(--color-bg-1);
-
-  &[data-tip]::before {
-    color: var(--color-fg-1);
-    border-radius: 4px;
-    border: solid 1px var(--color-fg-2);
-  }
-}
-
 @theme {
   --color-bg-1: #0c0f11;
   --color-bg-2: #191b1d;
