@@ -38,7 +38,7 @@ export default function Card(props: Props) {
 
   return (
     <a href={props.url} target="_blank">
-      <div className="group flex items-center gap-4 p-4 rounded-sm border-solid border border-fg-2 hover:border-accent-1 transition duration-300 cursor-pointer">
+      <div className="group flex items-start gap-4 p-4 rounded-sm border-solid border border-fg-2 hover:border-accent-1 transition duration-300 cursor-pointer">
         {/*Card thumbnail*/}
         {props.thumbnail && (
           <img
@@ -57,7 +57,7 @@ export default function Card(props: Props) {
             </h3>
 
             {/*Description*/}
-            <p className="mb-3 text-fg-2">{props.description}</p>
+            <p className="line-clamp-3 mb-3 text-fg-2">{props.description}</p>
 
             {/*Badges*/}
             <div className="flex flex-wrap gap-2 mr-4">
