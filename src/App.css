@@ -21,3 +21,11 @@
   font-display: swap;
   font-style: normal;
 }
+
+html {
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
