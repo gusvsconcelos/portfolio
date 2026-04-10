@@ -12,7 +12,7 @@ export default function Projects() {
           thumbnail="/src/assets/placeholder.jpg"
           thumbnailWidth="132px"
           title="Movie Roulette"
-          description="A web app that helps users choose what to watch by randomly selecting a movie from the TMDB API, while also showcasing films currently in theaters."
+          description="Um aplicativo web que ajuda os usuários a escolher o que assistir, selecionando aleatoriamente um filme da API do TMDB, além de exibir filmes atualmente em cartaz nos cinemas."
           url="#"
           techs={["typescript", "react", "tailwindcss"]}
         />
@@ -21,7 +21,7 @@ export default function Projects() {
           thumbnail="/src/assets/placeholder.jpg"
           thumbnailWidth="132px"
           title="n8n Assistent"
-          description="A fully self-hosted virtual assistant built with n8n, powered by LLaMA 3.2 (3B), and running locally through Ollama within Docker containers."
+          description="Um assistente virtual totalmente auto-hospedado, construído com n8n, alimentado pelo LLaMA 3.2 (3B) e executado localmente por meio do Ollama dentro de contêineres Docker."
           url="#"
           techs={["javascript", "postgresql", "docker"]}
         />
@@ -30,7 +30,7 @@ export default function Projects() {
           thumbnail="/src/assets/placeholder.jpg"
           thumbnailWidth="132px"
           title="Dailyway"
-          description="A web app that combines a to-do list with a daily streak system to help users maintain consistency."
+          description="Um aplicativo web que combina uma lista de tarefas com um sistema de sequência diária para ajudar os usuários a manter a consistência."
           url="#"
           techs={["javascript", "html", "css"]}
         />
@@ -39,7 +39,7 @@ export default function Projects() {
           thumbnail="/src/assets/placeholder.jpg"
           thumbnailWidth="132px"
           title="StakeLab"
-          description="A CLI-based sports betting simulator in Python where users place bets, manage a balance, and track history."
+          description="Um simulador de apostas esportivas baseado em CLI em Python, onde os usuários fazem apostas, gerenciam um saldo e acompanham o histórico."
           url="#"
           techs={["python"]}
         />
@@ -48,7 +48,7 @@ export default function Projects() {
           thumbnail="/src/assets/placeholder.jpg"
           thumbnailWidth="132px"
           title="weather.py"
-          description="A CLI weather tool that fetches current conditions from the OpenWeatherMap API based on user input and displays them in a clean terminal format."
+          description="Uma ferramenta de clima em CLI que obtém as condições atuais a partir da API do OpenWeatherMap com base na entrada do usuário e as exibe em um formato limpo no terminal."
           url="#"
           techs={["python"]}
         />
