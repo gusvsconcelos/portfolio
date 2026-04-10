@@ -11,27 +11,25 @@ export default function About() {
         {/*About me*/}
         <div>
           <p>
-            Sou estudante de Análise e Desenvolvimento de Sistemas e venho
-            construindo minha experiência principalmente com desenvolvimento
-            web. Já trabalhei como desenvolvedor autônomo criando e mantendo
-            sites, além de ter passado por funções como suporte técnico e
-            produção de conteúdo, o que acabou ampliando minha visão sobre
-            tecnologia, comunicação e uso real das aplicações.
+            Sou estudante de Análise e Desenvolvimento de Sistemas, com foco em
+            desenvolvimento web. Já atuei como desenvolvedor autônomo, criando e
+            mantendo sites, além de experiências com suporte técnico e produção
+            de conteúdo, o que me deu uma visão mais prática sobre como as
+            aplicações são usadas no dia a dia.
           </p>
           <br />
           <p>
-            Hoje, foco meus estudos e projetos em aplicações completas,
-            envolvendo tanto o front-end quanto o back-end. Tenho familiaridade
-            com JavaScript, React, Node.js e Python, e costumo aprender na
-            prática, desenvolvendo projetos próprios e explorando novas
-            ferramentas conforme surge a necessidade.
+            Atualmente, concentro meus estudos em aplicações completas,
+            trabalhando tanto no front-end quanto no back-end. Tenho experiência
+            com JavaScript, React, Node.js e Python, e aprendo principalmente
+            desenvolvendo projetos próprios e resolvendo problemas reais.
           </p>
           <br />
           <p>
-            Me interesso por entender como as coisas funcionam por trás, não só
-            em termos de código, mas também organização, estrutura e decisões de
-            projeto. Valorizo soluções simples, bem feitas e que realmente
-            funcionem no dia a dia, em vez de complexidade desnecessária.
+            Tenho interesse em entender como as coisas funcionam além do código,
+            incluindo organização, estrutura e decisões de projeto. Prefiro
+            soluções simples, bem construídas e que funcionem na prática,
+            evitando complexidade desnecessária.
           </p>
         </div>
       </div>
