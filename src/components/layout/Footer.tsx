@@ -6,7 +6,10 @@ export default function Footer() {
 
       {/*Copyright*/}
       <p className="text-sm text-fg-2 *:hover:text-accent-1 *:transition *:duration-300">
-        Powered by <a href="#">Gustavo Vasconcelos</a>
+        Powered by{" "}
+        <a href="https://www.linkedin.com/in/gusvsconcelos/" target="_blank">
+          Gustavo Vasconcelos
+        </a>
       </p>
     </footer>
   );

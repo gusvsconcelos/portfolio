@@ -16,6 +16,7 @@ export default function Contact() {
             <Send size={16} /> <p>Contato</p>
           </>
         }
+        url="mailto:gustavo.vs.me@gmail.com"
       />
     </section>
   );

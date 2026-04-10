@@ -18,13 +18,13 @@ export default function Header() {
 
       {/*Links*/}
       <div className="flex flex-row gap-2 mb-2 text-accent-1 *:p-1 *:hover:text-accent-2 *:transition *:duration-300">
-        <a href="#">
+        <a href="https://www.linkedin.com/in/gusvsconcelos/" target="_blank">
           <Linkedin />
         </a>
-        <a href="#">
+        <a href="https://github.com/gusvsconcelos" target="_blank">
           <Github />
         </a>
-        <a href="#">
+        <a href="https://www.instagram.com/gusvsconcelos/" target="_blank">
           <Instagram />
         </a>
       </div>
