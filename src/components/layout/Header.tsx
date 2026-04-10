@@ -1,4 +1,4 @@
-import { Linkedin, Github, Instagram } from "lucide-react";
+import { Linkedin, Github, Instagram } from "../ui/Icons";
 
 export default function Header() {
   return (
@@ -17,17 +17,15 @@ export default function Header() {
       <h1 className="text-3xl font-semibold">Gustavo Vasconcelos</h1>
 
       {/*Links*/}
-      <div className="flex flex-row gap-3 mb-2 text-accent-1 *:p-1 *:hover:text-accent-2 *:transition *:duration-300">
+      <div className="flex flex-row gap-2 mb-2 text-accent-1 *:p-1 *:hover:text-accent-2 *:transition *:duration-300">
         <a href="#">
-          <Linkedin size={20} />
+          <Linkedin />
         </a>
-
         <a href="#">
-          <Github size={20} />
+          <Github />
         </a>
-
         <a href="#">
-          <Instagram size={20} />
+          <Instagram />
         </a>
       </div>
 
