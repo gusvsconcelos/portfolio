@@ -2,7 +2,7 @@ import { Linkedin, Github, Instagram } from "../ui/Icons";
 
 export default function Header() {
   return (
-    <header className="flex flex-col justify-center items-center gap-1 p-6 rounded-sm border-solid border border-fg-2 text-fg-1">
+    <header className="flex flex-col justify-center items-center gap-2 p-6 rounded-sm border-solid border border-fg-2 text-fg-1">
       {/*Picture*/}
       <img
         src="/src/assets/profile.jpg"
