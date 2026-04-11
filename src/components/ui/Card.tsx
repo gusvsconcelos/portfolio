@@ -59,7 +59,7 @@ export default function Card(props: Props) {
             <p className="line-clamp-3 mb-3 text-fg-2">{props.description}</p>
 
             {/*Badges*/}
-            <div className="flex flex-wrap gap-2 mr-4">
+            <div className="flex flex-wrap gap-2">
               {props.techs && techBadges}
             </div>
           </div>
