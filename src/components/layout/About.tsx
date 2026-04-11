@@ -4,7 +4,7 @@ export default function About() {
       {/*Title*/}
       <h2 className="text-2xl font-semibold text-accent-1">Sobre</h2>
 
-      <div className="flex flex-row mt-4 text-fg-2">
+      <div className="flex mt-4 text-fg-2">
         {/*Decoration*/}
         <div className="w-2 min-h-fit mr-4 rounded-2xl bg-accent-1"></div>
 
@@ -21,7 +21,7 @@ export default function About() {
           <p>
             Atualmente, concentro meus estudos em aplicações completas,
             trabalhando tanto no front-end quanto no back-end. Tenho experiência
-            com JavaScript, React, Node.js e Python, e aprendo principalmente
+            com TypeScript, React, Node.js e Python, e aprendo principalmente
             desenvolvendo projetos próprios e resolvendo problemas reais.
           </p>
 
