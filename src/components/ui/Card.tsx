@@ -3,34 +3,33 @@ interface Props {
   thumbnailWidth?: string;
   title: string;
   description?: string;
-  button?: boolean;
   url?: string;
   techs?: string[];
 }
 
 const colorMap: Record<string, string> = {
-  python: "bg-[#4B6C8C]/20 border-[#4B6C8C] text-[#4B6C8C] opacity-80",
-  javascript: "bg-[#C2A93A]/20 border-[#C2A93A] text-[#C2A93A] opacity-80",
-  html: "bg-[#C65A2E]/20 border-[#C65A2E] text-[#C65A2E] opacity-80",
-  css: "bg-[#3E7FB1]/20 border-[#3E7FB1] text-[#3E7FB1] opacity-80",
-  typescript: "bg-[#3C6FA3]/20 border-[#3C6FA3] text-[#3C6FA3] opacity-80",
-  react: "bg-[#4FA3B8]/20 border-[#4FA3B8] text-[#4FA3B8] opacity-80",
-  nextjs: "bg-[#444444]/20 border-[#444444] text-[#444444] opacity-80",
-  tailwindcss: "bg-[#4FAFA8]/20 border-[#4FAFA8] text-[#4FAFA8] opacity-80",
-  nodejs: "bg-[#5E8C4A]/20 border-[#5E8C4A] text-[#5E8C4A] opacity-80",
-  nestjs: "bg-[#B0435B]/20 border-[#B0435B] text-[#B0435B] opacity-80",
-  php: "bg-[#6C6FA3]/20 border-[#6C6FA3] text-[#6C6FA3] opacity-80",
-  laravel: "bg-[#C94B3D]/20 border-[#C94B3D] text-[#C94B3D] opacity-80",
-  mysql: "bg-[#4F7C8B]/20 border-[#4F7C8B] text-[#4F7C8B] opacity-80",
-  postgresql: "bg-[#4A6E91]/20 border-[#4A6E91] text-[#4A6E91] opacity-80",
-  mongodb: "bg-[#4F8A5B]/20 border-[#4F8A5B] text-[#4F8A5B] opacity-80",
-  docker: "bg-[#4F8DB8]/20 border-[#4F8DB8] text-[#4F8DB8] opacity-80",
+  python: "bg-[#4B6C8C]/20 border-[#4B6C8C] text-[#4B6C8C]",
+  javascript: "bg-[#C2A93A]/20 border-[#C2A93A] text-[#C2A93A]",
+  html: "bg-[#C65A2E]/20 border-[#C65A2E] text-[#C65A2E]",
+  css: "bg-[#3E7FB1]/20 border-[#3E7FB1] text-[#3E7FB1]",
+  typescript: "bg-[#3C6FA3]/20 border-[#3C6FA3] text-[#3C6FA3]",
+  react: "bg-[#4FA3B8]/20 border-[#4FA3B8] text-[#4FA3B8]",
+  nextjs: "bg-[#444444]/20 border-[#444444] text-[#444444]",
+  tailwindcss: "bg-[#4FAFA8]/20 border-[#4FAFA8] text-[#4FAFA8] ",
+  nodejs: "bg-[#5E8C4A]/20 border-[#5E8C4A] text-[#5E8C4A]",
+  nestjs: "bg-[#B0435B]/20 border-[#B0435B] text-[#B0435B]",
+  php: "bg-[#6C6FA3]/20 border-[#6C6FA3] text-[#6C6FA3]",
+  laravel: "bg-[#C94B3D]/20 border-[#C94B3D] text-[#C94B3D]",
+  mysql: "bg-[#4F7C8B]/20 border-[#4F7C8B] text-[#4F7C8B]",
+  postgresql: "bg-[#4A6E91]/20 border-[#4A6E91] text-[#4A6E91]",
+  mongodb: "bg-[#4F8A5B]/20 border-[#4F8A5B] text-[#4F8A5B]",
+  docker: "bg-[#4F8DB8]/20 border-[#4F8DB8] text-[#4F8DB8]",
 };
 
 export default function Card(props: Props) {
   const techBadges = props.techs?.map((tech) => (
     <span
-      className={`px-1 pb-px rounded-sm border border-solid text-sm ${colorMap[tech]}`}
+      className={`px-1 pb-px rounded-sm border border-solid text-sm ${colorMap[tech]} opacity-80`}
     >
       {tech}
     </span>

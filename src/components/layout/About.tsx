@@ -6,10 +6,10 @@ export default function About() {
 
       <div className="flex flex-row mt-4 text-fg-2">
         {/*Decoration*/}
-        <div className="w-3 max-h-fit mr-6 rounded-2xl bg-accent-1"></div>
+        <div className="w-3 min-h-fit mr-6 rounded-2xl bg-accent-1"></div>
 
         {/*About me*/}
-        <div>
+        <div className="flex flex-col gap-3">
           <p>
             Sou estudante de Análise e Desenvolvimento de Sistemas, com foco em
             desenvolvimento web. Já atuei como desenvolvedor autônomo, criando e
@@ -17,14 +17,14 @@ export default function About() {
             de conteúdo, o que me deu uma visão mais prática sobre como as
             aplicações são usadas no dia a dia.
           </p>
-          <br />
+
           <p>
             Atualmente, concentro meus estudos em aplicações completas,
             trabalhando tanto no front-end quanto no back-end. Tenho experiência
             com JavaScript, React, Node.js e Python, e aprendo principalmente
             desenvolvendo projetos próprios e resolvendo problemas reais.
           </p>
-          <br />
+
           <p>
             Tenho interesse em entender como as coisas funcionam além do código,
             incluindo organização, estrutura e decisões de projeto. Prefiro

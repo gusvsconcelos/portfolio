@@ -17,13 +17,15 @@ export default function Header() {
       <h1 className="text-3xl font-semibold">Gustavo Vasconcelos</h1>
 
       {/*Links*/}
-      <div className="flex flex-row gap-2 mb-2 text-accent-1 *:p-1 *:hover:text-accent-2 *:transition *:duration-300">
+      <div className="flex gap-2 mb-2 text-accent-1 *:p-1 *:hover:text-accent-2 *:transition *:duration-300">
         <a href="https://www.linkedin.com/in/gusvsconcelos/" target="_blank">
           <Linkedin />
         </a>
+
         <a href="https://github.com/gusvsconcelos" target="_blank">
           <Github />
         </a>
+
         <a href="https://www.instagram.com/gusvsconcelos/" target="_blank">
           <Instagram />
         </a>
