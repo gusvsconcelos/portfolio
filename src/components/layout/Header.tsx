@@ -6,15 +6,16 @@ export default function Header() {
       {/*Picture*/}
       <img
         src="/src/assets/profile.jpg"
-        width={"132px"}
-        className="rounded-full border-solid border-4 border-fg-1 pointer-events-none select-none"
+        className="w-32 rounded-full border-solid border-4 border-fg-1 pointer-events-none select-none"
       />
 
       {/*Username*/}
       <p className="text-fg-2">@gusvsconcelos</p>
 
       {/*Full name*/}
-      <h1 className="text-3xl font-semibold">Gustavo Vasconcelos</h1>
+      <h1 className="text-center text-3xl font-semibold">
+        Gustavo Vasconcelos
+      </h1>
 
       {/*Links*/}
       <div className="flex gap-2 mb-2 text-accent-1 *:p-1 *:hover:text-accent-2 *:transition *:duration-300">

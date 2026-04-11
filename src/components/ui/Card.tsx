@@ -1,6 +1,5 @@
 interface Props {
   thumbnail?: string;
-  thumbnailWidth?: string;
   title: string;
   description?: string;
   url?: string;
@@ -29,7 +28,7 @@ const colorMap: Record<string, string> = {
 export default function Card(props: Props) {
   const techBadges = props.techs?.map((tech) => (
     <span
-      className={`px-1 pb-px rounded-sm border border-solid text-sm ${colorMap[tech]} opacity-80`}
+      className={`px-1 pb-px rounded-sm border border-solid text-xs ${colorMap[tech]} opacity-80`}
     >
       {tech}
     </span>
@@ -37,18 +36,17 @@ export default function Card(props: Props) {
 
   return (
     <a href={props.url} target="_blank">
-      <div className="group flex items-start gap-4 p-4 rounded-sm border-solid border border-fg-2 hover:border-accent-1 transition duration-300 cursor-pointer">
+      <div className="group flex flex-col sm:flex-row gap-4 p-4 rounded-sm border-solid border border-fg-2 hover:border-accent-1 transition duration-300 cursor-pointer">
         {/*Card thumbnail*/}
         {props.thumbnail && (
           <img
             src={props.thumbnail}
-            width={props.thumbnailWidth}
-            className="h-auto rounded-sm pointer-events-none select-none"
+            className="h-full sm:w-32 w-auto rounded-sm pointer-events-none select-none"
           />
         )}
 
         {/*Title/description/badges*/}
-        <div className="flex justify-between items-center w-full">
+        <div className="flex items-center w-full">
           <div>
             {/*Title*/}
             <h3 className="text-xl font-semibold text-fg-1 group-hover:text-accent-1">

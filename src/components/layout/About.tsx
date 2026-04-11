@@ -6,7 +6,7 @@ export default function About() {
 
       <div className="flex mt-4 text-fg-2">
         {/*Decoration*/}
-        <div className="w-2 min-h-fit mr-4 rounded-2xl bg-accent-1"></div>
+        <div className="min-w-0.5 min-h-fit mr-4 rounded-2xl bg-accent-1"></div>
 
         {/*About me*/}
         <div className="flex flex-col gap-4">
