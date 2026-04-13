@@ -1,10 +1,10 @@
 export default function About() {
   return (
-    <section className="p-6 rounded-sm border-solid border border-fg-2">
+    <section className="p-6 rounded-sm border-solid border border-light-border dark:border-fg-dark-2">
       {/*Title*/}
       <h2 className="text-2xl font-semibold text-accent-1">Sobre</h2>
 
-      <div className="flex mt-4 text-fg-2">
+      <div className="flex mt-4 text-fg-2 dark:text-fg-dark-2">
         {/*Decoration*/}
         <div className="min-w-0.5 min-h-fit mr-4 rounded-2xl bg-accent-1"></div>
 
