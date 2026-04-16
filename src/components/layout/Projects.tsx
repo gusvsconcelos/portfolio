@@ -9,7 +9,7 @@ export default function Projects() {
       {/*Projects*/}
       <div className="flex flex-col gap-4 mt-4">
         <Card
-          thumbnail="/src/assets/placeholder.jpg"
+          thumbnail="/src/assets/thumbnails/movie-roulette.png"
           title="Movie Roulette"
           description="Um aplicativo web que ajuda os usuários a escolher o que assistir, selecionando aleatoriamente um filme da API do TMDB, além de exibir filmes atualmente em cartaz nos cinemas."
           url="https://github.com/gusvsconcelos/movie-roulette"
@@ -17,7 +17,7 @@ export default function Projects() {
         />
 
         <Card
-          thumbnail="/src/assets/placeholder.jpg"
+          thumbnail="/src/assets/thumbnails/n8n-assistant.png"
           title="n8n Assistent"
           description="Um assistente virtual totalmente auto-hospedado, construído com n8n, alimentado pelo LLaMA 3.2 (3B) e executado localmente por meio do Ollama dentro de contêineres Docker."
           url="https://github.com/gusvsconcelos/assistant-n8n"
@@ -25,7 +25,7 @@ export default function Projects() {
         />
 
         <Card
-          thumbnail="/src/assets/placeholder.jpg"
+          thumbnail="/src/assets/thumbnails/dailyway.png"
           title="Dailyway"
           description="Um aplicativo web que combina uma lista de tarefas com um sistema de sequência diária para ajudar os usuários a manter a consistência."
           url="https://github.com/gusvsconcelos/dailyway"
@@ -33,7 +33,7 @@ export default function Projects() {
         />
 
         <Card
-          thumbnail="/src/assets/placeholder.jpg"
+          thumbnail="/src/assets/thumbnails/stakelab.png"
           title="StakeLab"
           description="Um simulador de apostas esportivas baseado em CLI em Python, onde os usuários fazem apostas, gerenciam um saldo e acompanham o histórico."
           url="https://github.com/gusvsconcelos/stakelab"
@@ -41,7 +41,7 @@ export default function Projects() {
         />
 
         <Card
-          thumbnail="/src/assets/placeholder.jpg"
+          thumbnail="/src/assets/thumbnails/weather-py.png"
           title="weather.py"
           description="Uma ferramenta de clima em CLI que obtém as condições atuais a partir da API do OpenWeatherMap com base na entrada do usuário e as exibe em um formato limpo no terminal."
           url="https://github.com/gusvsconcelos/weather-py"
