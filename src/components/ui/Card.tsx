@@ -28,7 +28,7 @@ const colorMap: Record<string, string> = {
 export default function Card(props: Props) {
   const techBadges = props.techs?.map((tech) => (
     <span
-      className={`px-1 pb-px rounded-sm border border-solid text-xs ${colorMap[tech]} opacity-80`}
+      className={`px-1 pb-0.5 rounded-sm border border-solid text-xs ${colorMap[tech]} opacity-80`}
     >
       {tech}
     </span>
@@ -36,7 +36,7 @@ export default function Card(props: Props) {
 
   return (
     <a href={props.url} target="_blank">
-      <div className="group flex flex-col sm:flex-row gap-4 p-4 rounded-sm border-solid border border-light-border dark:border-fg-dark-2 hover:border-accent-1 trasition duration-300 **:transition **:duration-300 cursor-pointer">
+      <div className="group flex flex-col sm:flex-row gap-4 p-4 rounded-sm border-solid border border-fg-2 dark:border-fg-dark-2 hover:border-accent-1 trasition duration-300 **:transition **:duration-300 cursor-pointer">
         {/*Card thumbnail*/}
         {props.thumbnail && (
           <img
@@ -46,7 +46,7 @@ export default function Card(props: Props) {
         )}
 
         {/*Title/description/badges*/}
-        <div className="flex items-center w-full">
+        <div className="w-full">
           <div>
             {/*Title*/}
             <h3 className="text-xl font-semibold text-fg-1 dark:text-fg-dark-1 group-hover:text-accent-1">
@@ -54,7 +54,7 @@ export default function Card(props: Props) {
             </h3>
 
             {/*Description*/}
-            <p className="line-clamp-3 mb-3 text-fg-2 dark:text-fg-dark-2">
+            <p className="line-clamp-3 mb-2 text-fg-2 dark:text-fg-dark-2">
               {props.description}
             </p>
 

@@ -2,7 +2,7 @@ import Card from "../ui/Card";
 
 export default function Projects() {
   return (
-    <section className="p-6 rounded-sm border-solid border border-light-border dark:border-fg-dark-2">
+    <section className="p-6 rounded-sm border-solid border border-fg-2 dark:border-fg-dark-2">
       {/*Title*/}
       <h2 className="text-2xl font-semibold text-accent-1">Projetos</h2>
 
