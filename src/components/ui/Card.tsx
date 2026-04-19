@@ -28,7 +28,7 @@ const colorMap: Record<string, string> = {
 export default function Card(props: Props) {
   const techBadges = props.techs?.map((tech) => (
     <span
-      className={`px-1 pb-0.5 rounded-sm border border-solid text-xs ${colorMap[tech]} opacity-80`}
+      className={`px-1 py-px rounded-sm border border-solid text-xs ${colorMap[tech]} opacity-80`}
     >
       {tech}
     </span>
