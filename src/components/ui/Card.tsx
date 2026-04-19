@@ -46,22 +46,20 @@ export default function Card(props: Props) {
         )}
 
         {/*Title/description/badges*/}
-        <div className="w-full">
-          <div>
-            {/*Title*/}
-            <h3 className="text-xl font-semibold text-fg-1 dark:text-fg-dark-1 group-hover:text-accent-1">
-              {props.title}
-            </h3>
+        <div>
+          {/*Title*/}
+          <h3 className="text-xl font-semibold text-fg-1 dark:text-fg-dark-1 group-hover:text-accent-1">
+            {props.title}
+          </h3>
 
-            {/*Description*/}
-            <p className="line-clamp-3 mb-2 text-fg-2 dark:text-fg-dark-2">
-              {props.description}
-            </p>
+          {/*Description*/}
+          <p className="line-clamp-3 mb-2 text-fg-2 dark:text-fg-dark-2">
+            {props.description}
+          </p>
 
-            {/*Badges*/}
-            <div className="flex flex-wrap gap-2">
-              {props.techs && techBadges}
-            </div>
+          {/*Badges*/}
+          <div className="flex flex-wrap gap-2">
+            {props.techs && techBadges}
           </div>
         </div>
       </div>

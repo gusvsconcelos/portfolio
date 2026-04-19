@@ -1,5 +1,4 @@
 import photo from "../../assets/profile.png";
-
 import { Linkedin, Github, Instagram } from "../ui/Icons";
 
 export default function Header() {
@@ -8,7 +7,7 @@ export default function Header() {
       {/*Picture*/}
       <img
         src={photo}
-        className="w-32 rounded-full border-solid border-4 border-accent-2 dark:border-accent-1 pointer-events-none select-none"
+        className="w-28 rounded-full border-solid border-3 border-accent-2 dark:border-accent-1 pointer-events-none select-none"
       />
 
       {/*Username*/}
