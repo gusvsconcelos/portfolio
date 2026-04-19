@@ -5,7 +5,7 @@ export default function Header() {
     <header className="flex flex-col justify-center items-center gap-2 p-6 rounded-sm border-solid border border-fg-2 dark:border-fg-dark-2 text-fg-1 dark:text-fg-dark-1">
       {/*Picture*/}
       <img
-        src="/src/assets/profile.jpg"
+        src="/src/assets/profile.png"
         className="w-32 rounded-full border-solid border-4 border-accent-2 dark:border-accent-1 pointer-events-none select-none"
       />
 
