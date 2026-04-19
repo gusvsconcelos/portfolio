@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="m-auto pt-6 text-center">
+    <footer className="m-auto pt-3 sm:pt-6 text-center">
       <a
         href="https://www.linkedin.com/in/gusvsconcelos/"
         target="_blank"
