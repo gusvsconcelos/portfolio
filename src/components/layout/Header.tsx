@@ -3,11 +3,11 @@ import { Linkedin, Github, Instagram } from "../ui/Icons";
 
 export default function Header() {
   return (
-    <header className="flex flex-col justify-center items-center gap-2 p-6 rounded-sm border-solid border border-fg-2 dark:border-fg-dark-2 text-fg-1 dark:text-fg-dark-1">
+    <header className="flex flex-col justify-center items-center gap-2 p-6 rounded-sm border-solid border border-fg-2 dark:border-fg-dark-2 text-fg-1 dark:text-fg-dark-1 transition duration-300">
       {/*Picture*/}
       <img
         src={photo}
-        className="w-28 rounded-full border-solid border-3 border-accent-2 dark:border-accent-1 pointer-events-none select-none"
+        className="w-28 rounded-full border-solid border-3 border-accent-2 dark:border-accent-1 pointer-events-none select-none trasition duration-300"
       />
 
       {/*Username*/}

@@ -9,7 +9,7 @@ export default function About() {
         <div className="min-w-0.5 min-h-fit mr-4 rounded-2xl bg-accent-1"></div>
 
         {/*About me*/}
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 transition duration-300">
           <p>
             Sou estudante de Análise e Desenvolvimento de Sistemas, com foco em
             desenvolvimento web. Já atuei como desenvolvedor autônomo, criando e

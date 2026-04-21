@@ -42,3 +42,8 @@ html {
 ::-webkit-scrollbar {
   display: none;
 }
+
+/*Disable transitions initially*/
+.no-transition * {
+  transition: none !important;
+}
