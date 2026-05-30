@@ -8,28 +8,27 @@ export default function About() {
         {/*Decoration*/}
         <div className="min-w-0.5 min-h-fit mr-4 rounded-2xl bg-accent-1"></div>
 
-        {/*About me*/}
+        {/* About me */}
         <div className="flex flex-col gap-4 transition duration-300">
           <p>
-            Sou estudante de Análise e Desenvolvimento de Sistemas, com foco em
-            desenvolvimento web. Já atuei como desenvolvedor autônomo, criando e
-            mantendo sites, além de experiências com suporte técnico e produção
-            de conteúdo, o que me deu uma visão mais prática sobre como as
-            aplicações são usadas no dia a dia.
+            Estudante de Análise e Desenvolvimento de Sistemas na Universidade
+            Estácio de Sá, com foco em desenvolvimento web full stack. Possuo
+            experiência prática no desenvolvimento de aplicações completas
+            através de projetos pessoais, atuando tanto no frontend quanto no
+            backend.
           </p>
-
           <p>
-            Atualmente, concentro meus estudos em aplicações completas,
-            trabalhando tanto no front-end quanto no back-end. Tenho experiência
-            com TypeScript, React, Node.js e Python, e aprendo principalmente
-            desenvolvendo projetos próprios e resolvendo problemas reais.
+            Tenho sólida experiência com React, TypeScript, Tailwind CSS e
+            Node.js, além de conhecimento em Python, PHP, bancos de dados
+            relacionais (PostgreSQL e MySQL) e Docker. Busco sempre construir
+            soluções práticas, bem estruturadas e com boa experiência de
+            usuário, priorizando código limpo, performance e manutenibilidade.
           </p>
-
           <p>
-            Tenho interesse em entender como as coisas funcionam além do código,
-            incluindo organização, estrutura e decisões de projeto. Prefiro
-            soluções simples, bem construídas e que funcionem na prática,
-            evitando complexidade desnecessária.
+            Além da programação, já atuei em suporte técnico, produção de
+            conteúdo digital e operações, experiências que desenvolveram minha
+            capacidade de entender as necessidades reais dos usuários e
+            trabalhar com prazos e demandas diversas.
           </p>
         </div>
       </div>
