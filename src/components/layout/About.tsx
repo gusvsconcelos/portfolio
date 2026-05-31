@@ -11,11 +11,10 @@ export default function About() {
         {/* About me */}
         <div className="flex flex-col gap-4 transition duration-300">
           <p>
-            Estudante de Análise e Desenvolvimento de Sistemas na Universidade
-            Estácio de Sá, com foco em desenvolvimento web full stack. Possuo
-            experiência prática no desenvolvimento de aplicações completas
-            através de projetos pessoais, atuando tanto no frontend quanto no
-            backend.
+            Desenvolvedor Full Stack e estudante de Análise e Desenvolvimento de
+            Sistemas na Universidade Estácio de Sá. Possuo experiência prática
+            no desenvolvimento de aplicações completas através de projetos
+            pessoais, atuando tanto no frontend quanto no backend.
           </p>
           <p>
             Tenho sólida experiência com React, TypeScript, Tailwind CSS e
