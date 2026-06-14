@@ -8,8 +8,7 @@ export default function CurrentlyWorkingOn() {
 
       {/*Working on*/}
       <div className="mt-4">
-        <WorkingOn activity="Desenvolvendo capacitação em QA" />
-        <WorkingOn activity="Estudando PHP (Laravel)" />
+        <WorkingOn activity="Estudando Laravel" />
       </div>
     </section>
   );

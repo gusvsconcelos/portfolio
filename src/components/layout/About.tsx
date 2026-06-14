@@ -11,23 +11,24 @@ export default function About() {
         {/* About me */}
         <div className="flex flex-col gap-4 transition duration-300">
           <p>
-            Desenvolvedor Full Stack e estudante de Análise e Desenvolvimento de
-            Sistemas na Universidade Estácio de Sá. Possuo experiência prática
-            no desenvolvimento de aplicações completas através de projetos
-            pessoais, atuando tanto no frontend quanto no backend.
+            Sou Desenvolvedor Full Stack e graduando em Análise e
+            Desenvolvimento de Sistemas na Universidade Estácio de Sá. Tenho
+            experiência prática no desenvolvimento de aplicações web modernas
+            por meio de projetos pessoais, atuando tanto no frontend quanto no
+            backend.
           </p>
           <p>
-            Tenho sólida experiência com React, TypeScript, Tailwind CSS e
-            Node.js, além de conhecimento em Python, PHP, bancos de dados
-            relacionais (PostgreSQL e MySQL) e Docker. Busco sempre construir
-            soluções práticas, bem estruturadas e com boa experiência de
-            usuário, priorizando código limpo, performance e manutenibilidade.
+            Trabalho principalmente com React, TypeScript, Tailwind CSS e
+            Node.js, além de possuir conhecimentos em Python, PHP, PostgreSQL e
+            Docker. Busco desenvolver soluções práticas, bem estruturadas e de
+            fácil manutenção, priorizando código limpo, performance e boa
+            experiência do usuário.
           </p>
           <p>
-            Além da programação, já atuei em suporte técnico, produção de
-            conteúdo digital e operações, experiências que desenvolveram minha
-            capacidade de entender as necessidades reais dos usuários e
-            trabalhar com prazos e demandas diversas.
+            Atualmente, atuo como estagiário de Analista de QA na CodXis,
+            ampliando minha experiência em qualidade de software, testes e
+            processos de desenvolvimento, o que complementa minha visão sobre a
+            construção de aplicações confiáveis e robustas.
           </p>
         </div>
       </div>

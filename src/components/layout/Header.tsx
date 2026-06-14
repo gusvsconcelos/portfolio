@@ -35,8 +35,8 @@ export default function Header() {
 
       {/*Introduction*/}
       <p className="max-w-98 text-center text-fg-2 dark:text-fg-dark-2">
-        Oi, sou o Gustavo, estudante e desenvolvedor full stack com foco em
-        soluções modernas para web.
+        Projetos, experimentos e estudos em desenvolvimento web e engenharia de
+        software.
       </p>
     </header>
   );
