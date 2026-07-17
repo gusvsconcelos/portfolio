@@ -12,23 +12,25 @@ export default function About() {
         <div className="flex flex-col gap-4 transition duration-300">
           <p>
             Sou Desenvolvedor Full Stack e graduando em Análise e
-            Desenvolvimento de Sistemas na Universidade Estácio de Sá. Tenho
-            experiência prática no desenvolvimento de aplicações web modernas
-            por meio de projetos pessoais, atuando tanto no frontend quanto no
-            backend.
+            Desenvolvimento de Sistemas pela Universidade Estácio de Sá. Tenho
+            experiência prática no desenvolvimento de aplicações web por meio de
+            projetos pessoais, atuando na construção de interfaces, APIs e
+            integrações entre diferentes camadas da aplicação.
           </p>
           <p>
             Trabalho principalmente com React, TypeScript, Tailwind CSS e
-            Node.js, além de possuir conhecimentos em Python, PHP, PostgreSQL e
-            Docker. Busco desenvolver soluções práticas, bem estruturadas e de
-            fácil manutenção, priorizando código limpo, performance e boa
-            experiência do usuário.
+            Node.js, além de conhecimentos em Python, PHP, PostgreSQL e Docker.
+            Busco desenvolver aplicações bem estruturadas, com código
+            organizado, foco em manutenção e atenção aos detalhes de
+            implementação e experiência do usuário.
           </p>
           <p>
-            Atualmente, atuo como estagiário de Analista de QA na CodXis,
-            ampliando minha experiência em qualidade de software, testes e
-            processos de desenvolvimento, o que complementa minha visão sobre a
-            construção de aplicações confiáveis e robustas.
+            Atualmente, atuo como estagiário de Analista de QA na CodXis, onde
+            desenvolvo experiência em testes, validação de requisitos e
+            processos de qualidade de software. Essa atuação complementa minha
+            visão sobre desenvolvimento, permitindo compreender não apenas a
+            construção de uma aplicação, mas também os critérios necessários
+            para entregar software confiável.
           </p>
         </div>
       </div>
