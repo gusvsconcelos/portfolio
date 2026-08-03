@@ -8,7 +8,7 @@ export default function CurrentlyWorkingOn() {
 
       {/*Working on*/}
       <div className="mt-4">
-        <WorkingOn activity="Valora - App de gestão financeira" />
+        <WorkingOn activity="Fintrax - App de gestão financeira" />
       </div>
     </section>
   );
