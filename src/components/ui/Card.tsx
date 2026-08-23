@@ -24,7 +24,8 @@ const colorMap: Record<string, string> = {
   mongodb: "bg-[#4F8A5B]/20 border-[#4F8A5B] text-[#4F8A5B]",
   docker: "bg-[#4F8DB8]/20 border-[#4F8DB8] text-[#4F8DB8]",
   n8n: "bg-[#EA4B71]/20 border-[#EA4B71] text-[#EA4B71]",
-  ollama: "bg-[#D68E42]/20 border-[#D68E42] text-[#D68E42]",
+  ollama:
+    "bg-[#000000]/20 border-[#000000] text-[#000000] dark:bg-[#FFFFFF]/20 dark:border-[#FFFFFF] dark:text-[#FFFFFF]",
 };
 
 export default function Card(props: Props) {
