@@ -12,25 +12,25 @@ export default function About() {
         <div className="flex flex-col gap-4 transition duration-300">
           <p>
             Sou Desenvolvedor Full Stack e graduando em Análise e
-            Desenvolvimento de Sistemas pela Universidade Estácio de Sá. Tenho
-            experiência prática no desenvolvimento de aplicações web por meio de
-            projetos pessoais, atuando na construção de interfaces, APIs e
-            integrações entre diferentes camadas da aplicação.
+            Desenvolvimento de Sistemas pela Estácio. Venho construindo
+            aplicações web por meio de projetos pessoais — desde interfaces até
+            APIs e integrações entre camadas.
           </p>
+
           <p>
-            Trabalho principalmente com React, TypeScript, Tailwind CSS e
-            Node.js, além de conhecimentos em Python, PHP, PostgreSQL e Docker.
-            Busco desenvolver aplicações bem estruturadas, com código
-            organizado, foco em manutenção e atenção aos detalhes de
-            implementação e experiência do usuário.
+            Meu dia a dia de estudos e projetos gira em torno de React,
+            TypeScript, Tailwind e Node.js, com conhecimento também em Python,
+            PHP, PostgreSQL e Docker. Gosto de código bem estruturado, fácil de
+            manter e que preste atenção tanto nos detalhes técnicos quanto na
+            experiência de quem usa.
           </p>
+
           <p>
-            Atualmente, atuo como estagiário de Analista de QA na CodXis, onde
-            desenvolvo experiência em testes, validação de requisitos e
-            processos de qualidade de software. Essa atuação complementa minha
-            visão sobre desenvolvimento, permitindo compreender não apenas a
-            construção de uma aplicação, mas também os critérios necessários
-            para entregar software confiável.
+            Atualmente atuo como estagiário de Analista de QA na CodXis.
+            Trabalhar com testes e qualidade tem complementado bastante minha
+            visão de desenvolvimento: me ajuda a enxergar não só como construir,
+            mas também o que é preciso para que o software realmente chegue
+            confiável até o usuário.
           </p>
         </div>
       </div>
