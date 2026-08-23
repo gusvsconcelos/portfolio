@@ -25,10 +25,10 @@ export default function Projects() {
 
         <Card
           thumbnail={n8nAssistant}
-          title="n8n Assistent"
+          title="n8n Assistant"
           description="Um assistente virtual totalmente auto-hospedado, construído com n8n, alimentado pelo LLaMA 3.2 (3B) e executado localmente por meio do Ollama dentro de contêineres Docker."
           url="https://github.com/gusvsconcelos/assistant-n8n"
-          techs={["javascript", "postgresql", "docker"]}
+          techs={["n8n", "ollama", "javascript", "postgresql", "docker"]}
         />
 
         <Card
