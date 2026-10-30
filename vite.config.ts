@@ -5,4 +5,8 @@ import tailwindcss from "@tailwindcss/vite";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  build: {
+    // Keep images as separate, cacheable files instead of inlining them in JS.
+    assetsInlineLimit: 0,
+  },
 });

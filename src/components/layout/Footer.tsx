@@ -4,7 +4,8 @@ export default function Footer() {
       <a
         href="https://www.linkedin.com/in/gusvsconcelos/"
         target="_blank"
-        className="text-fg-2 dark:text-fg-dark-2 hover:text-accent-1 transition duration-300"
+        rel="noopener noreferrer"
+        className="text-fg-2 hover:text-accent-hover transition-colors duration-300 hover:duration-[400ms] active:opacity-80 rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
       >
         &copy; {new Date().getFullYear()} Gustavo Vasconcelos
       </a>

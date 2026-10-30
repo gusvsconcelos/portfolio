@@ -1,22 +1,17 @@
+import Section from "../ui/Section";
 import Card from "../ui/Card";
-import {
-  MovieRoulette,
-  n8nAssistant,
-  Dailyway,
-  StakeLab,
-  weatherPy,
-} from "../../utils/thumbnails.ts";
+import movieRoulette from "../../assets/thumbnails/movie-roulette.webp";
+import n8nAssistant from "../../assets/thumbnails/n8n-assistant.webp";
+import dailyway from "../../assets/thumbnails/dailyway.webp";
+import stakeLab from "../../assets/thumbnails/stakelab.webp";
+import weatherPy from "../../assets/thumbnails/weather-py.webp";
 
 export default function Projects() {
   return (
-    <section className="p-6 rounded-sm border-solid border border-fg-2 dark:border-fg-dark-2">
-      {/*Title*/}
-      <h2 className="text-2xl font-semibold text-accent-1">Projetos</h2>
-
-      {/*Projects*/}
-      <div className="flex flex-col gap-4 mt-4">
+    <Section title="Projetos">
+      <div className="flex flex-col gap-4">
         <Card
-          thumbnail={MovieRoulette}
+          thumbnail={movieRoulette}
           title="Movie Roulette"
           description="Um aplicativo web que ajuda os usuários a escolher o que assistir, selecionando aleatoriamente um filme da API do TMDB, além de exibir filmes atualmente em cartaz nos cinemas."
           url="https://github.com/gusvsconcelos/movie-roulette"
@@ -32,7 +27,7 @@ export default function Projects() {
         />
 
         <Card
-          thumbnail={Dailyway}
+          thumbnail={dailyway}
           title="Dailyway"
           description="Um aplicativo web que combina uma lista de tarefas com um sistema de sequência diária para ajudar os usuários a manter a consistência."
           url="https://github.com/gusvsconcelos/dailyway"
@@ -40,7 +35,7 @@ export default function Projects() {
         />
 
         <Card
-          thumbnail={StakeLab}
+          thumbnail={stakeLab}
           title="StakeLab"
           description="Um simulador de apostas esportivas baseado em CLI em Python, onde os usuários fazem apostas, gerenciam um saldo e acompanham o histórico."
           url="https://github.com/gusvsconcelos/stakelab"
@@ -55,6 +50,6 @@ export default function Projects() {
           techs={["python"]}
         />
       </div>
-    </section>
+    </Section>
   );
 }

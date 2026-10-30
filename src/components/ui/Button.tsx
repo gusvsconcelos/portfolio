@@ -1,16 +1,17 @@
+import type { ReactNode } from "react";
+
 interface Props {
-  content: React.ReactNode;
+  children: ReactNode;
   url: string;
 }
 
-export default function Button(props: Props) {
+export default function Button({ children, url }: Props) {
   return (
     <a
-      href={props.url}
-      target="_blank"
-      className="flex items-center gap-1 p-2 rounded-sm border-solid border border-fg-2 dark:border-fg-dark-2 text-sm font-semibold text-fg-2 dark:text-fg-dark-2 hover:text-accent-1 hover:border-accent-1 transition duration-300"
+      href={url}
+      className="flex items-center gap-1 p-2 rounded-sm border-solid border border-line text-sm font-semibold text-fg-2 hover:text-accent-hover hover:border-accent-hover transition-colors duration-300 hover:duration-[400ms] active:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
     >
-      {props.content}
+      {children}
     </a>
   );
 }

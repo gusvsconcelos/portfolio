@@ -3,47 +3,81 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /*Light Mode*/
+  /*
+    Neutral scale: a single hue family (OKLCH H=248, blue-gray).
+    Lightness alone separates the steps, so both themes share one tone.
+  */
+
+  /* Light theme (default) */
   --color-bg-1: #f9fafb;
-  --color-bg-2: #f3f4f6;
-  --color-bg-3: #e5e7eb;
 
   --color-fg-1: #1f2933;
-  --color-fg-2: #4b5563;
+  --color-fg-2: #495662;
 
-  /*Dark Mode*/
-  --color-bg-dark-1: #0c0f11;
-  --color-bg-dark-2: #191b1d;
-  --color-bg-dark-3: #262829;
+  --color-line: #495662;
 
-  --color-fg-dark-1: #b1b8be;
-  --color-fg-dark-2: #60696f;
+  /*
+    Accent scale: single hue/chroma family (OKLCH H≈190, C≈0.064).
+    Only lightness changes between themes so the tone stays identical.
+  */
+  --color-accent: #599692;
+  --color-accent-hover: #3e7b77;
 
-  /*Accent*/
-  --color-accent-1: #599692;
-  --color-accent-2: #77ddd6;
-
-  /*Font*/
-  --font-display: "supreme", monospace;
+  /* Font */
+  --font-display: "Supreme", ui-sans-serif, system-ui, sans-serif;
 }
 
 @font-face {
   font-family: "Supreme";
-  src: url("/src/assets/fonts/Supreme-Variable.woff2") format("woff2");
+  src: url("./assets/fonts/Supreme-Variable.woff2") format("woff2");
   font-weight: 100 800;
   font-display: swap;
   font-style: normal;
 }
 
 html {
+  background-color: var(--color-bg-1);
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   scrollbar-width: none;
+  color-scheme: light;
+}
+
+html.dark {
+  --color-bg-1: #0c0f11;
+
+  --color-fg-1: #b1b8be;
+  --color-fg-2: #767e86;
+
+  /* Borders stay a step darker than body text in dark mode. */
+  --color-line: #616870;
+
+  --color-accent: #94d2cd;
+  --color-accent-hover: #b0f0eb;
+
+  color-scheme: dark;
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
 
-/*Disable transitions initially*/
+/* Disable transitions on initial load */
+.no-transition,
 .no-transition * {
   transition: none !important;
+}
+
+/* Tech badges (colors come from --tech-light / --tech-dark) */
+@layer components {
+  .tech-badge {
+    color: var(--tech-light);
+    background-color: color-mix(in srgb, var(--tech-light) 14%, transparent);
+    border-color: var(--tech-light);
+  }
+
+  .dark .tech-badge {
+    color: var(--tech-dark);
+    background-color: color-mix(in srgb, var(--tech-dark) 14%, transparent);
+    border-color: var(--tech-dark);
+  }
 }

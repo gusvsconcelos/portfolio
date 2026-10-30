@@ -9,16 +9,28 @@ export default function ScrollToTop() {
       setVisible(window.scrollY > 300);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const scrollToTop = () => {
+    const reduceMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
+    window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+  };
+
   return (
     <button
-      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      className={`fixed bottom-6 right-17 p-2 rounded-sm border border-fg-2 dark:border-fg-dark-2 bg-bg-1 dark:bg-bg-dark-1 text-fg-1 dark:text-fg-dark-1 hover:text-accent-1 hover:border-accent-1 transition-all duration-300 ${visible ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+      type="button"
+      onClick={scrollToTop}
+      aria-label="Voltar ao topo"
+      tabIndex={visible ? 0 : -1}
+      className={`fixed bottom-6 right-17 p-2 rounded-sm border border-line bg-bg-1 text-fg-1 hover:text-accent-hover hover:border-accent-hover transition-[color,background-color,border-color,opacity,visibility] duration-300 hover:duration-[400ms] active:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${visible ? "opacity-100" : "opacity-0 invisible"}`}
     >
-      <ArrowUp size={18} />
+      <ArrowUp size={18} aria-hidden="true" />
     </button>
   );
 }
