@@ -12,25 +12,23 @@ export default function About() {
         <div className="flex flex-col gap-4 transition duration-300">
           <p>
             Sou Desenvolvedor Full Stack e graduando em Análise e
-            Desenvolvimento de Sistemas pela Estácio. Venho construindo
-            aplicações web por meio de projetos pessoais — desde interfaces até
-            APIs e integrações entre camadas.
+            Desenvolvimento de Sistemas. Venho desenvolvendo projetos próprios
+            para colocar em prática meus conhecimentos, trabalhando tanto no
+            frontend quanto no backend de aplicações web.
           </p>
 
           <p>
-            Meu dia a dia de estudos e projetos gira em torno de React,
-            TypeScript, Tailwind e Node.js, com conhecimento também em Python,
-            PHP, PostgreSQL e Docker. Gosto de código bem estruturado, fácil de
-            manter e que preste atenção tanto nos detalhes técnicos quanto na
-            experiência de quem usa.
+            Minha stack principal envolve React, TypeScript, Tailwind CSS e
+            Node.js. Também trabalho com Python, PostgreSQL e Docker em meus
+            estudos e projetos.
           </p>
 
           <p>
-            Atualmente atuo como estagiário de Analista de QA na CodXis.
-            Trabalhar com testes e qualidade tem complementado bastante minha
-            visão de desenvolvimento: me ajuda a enxergar não só como construir,
-            mas também o que é preciso para que o software realmente chegue
-            confiável até o usuário.
+            Atualmente, atuo como Analista de QA na CodXis. A experiência com
+            testes me permite olhar para o software além da implementação,
+            entendendo melhor como as funcionalidades se comportam e
+            identificando problemas que poderiam passar despercebidos durante o
+            desenvolvimento.
           </p>
         </div>
       </div>
