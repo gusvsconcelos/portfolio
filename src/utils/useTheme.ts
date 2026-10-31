@@ -1,7 +1,13 @@
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 
 type Theme = "dark" | "light" | "system";
 type ResolvedTheme = "dark" | "light";
+
+// Keep in sync with --color-bg-1 in App.css.
+const THEME_COLORS: Record<ResolvedTheme, string> = {
+  light: "#f9fafb",
+  dark: "#0c0f11",
+};
 
 function getStoredTheme(): Theme {
   try {
@@ -28,7 +34,7 @@ export function useTheme() {
     document.documentElement.classList.contains("dark") ? "dark" : "light",
   );
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const root = document.documentElement;
     const media = window.matchMedia("(prefers-color-scheme: dark)");
 
@@ -47,15 +53,9 @@ export function useTheme() {
       setResolvedTheme(current);
 
       // Keep the browser UI color in sync with the active theme.
-      const background = getComputedStyle(root)
-        .getPropertyValue("--color-bg-1")
-        .trim();
-
-      if (background) {
-        document
-          .querySelectorAll('meta[name="theme-color"]')
-          .forEach((meta) => meta.setAttribute("content", background));
-      }
+      document
+        .querySelector('meta[name="theme-color"]')
+        ?.setAttribute("content", THEME_COLORS[current]);
     };
 
     apply();

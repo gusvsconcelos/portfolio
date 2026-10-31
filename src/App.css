@@ -37,9 +37,12 @@
 
 html {
   background-color: var(--color-bg-1);
-  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   scrollbar-width: none;
-  color-scheme: light;
+  /*
+    Keep the native color scheme fixed. Toggling it on every theme change
+    makes mobile browsers repaint the canvas and can flash the page.
+  */
+  color-scheme: light dark;
 }
 
 html.dark {
@@ -53,8 +56,6 @@ html.dark {
 
   --color-accent: #94d2cd;
   --color-accent-hover: #b0f0eb;
-
-  color-scheme: dark;
 }
 
 ::-webkit-scrollbar {
