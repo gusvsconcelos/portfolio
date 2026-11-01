@@ -1,4 +1,4 @@
-import { useLayoutEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 type Theme = "dark" | "light" | "system";
 type ResolvedTheme = "dark" | "light";
@@ -24,11 +24,9 @@ function storeTheme(theme: Theme) {
 export function useTheme() {
   const [theme, setTheme] = useState<Theme>(getStoredTheme);
 
-  const [resolvedTheme, setResolvedTheme] = useState<ResolvedTheme>(() =>
-    document.documentElement.classList.contains("dark") ? "dark" : "light",
-  );
+  const [resolvedTheme, setResolvedTheme] = useState<ResolvedTheme>("light");
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const root = document.documentElement;
     const media = window.matchMedia("(prefers-color-scheme: dark)");
 

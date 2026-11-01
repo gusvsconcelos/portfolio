@@ -63,17 +63,6 @@ html.dark {
   transition: none !important;
 }
 
-/*
-  Meta's in-app browsers (Instagram/Facebook) use a custom Chromium WebView
-  whose compositor can flash the page while colors animate. The inline script
-  in index.html flags them, so theme changes there are applied instantly.
-  Normal browsers keep the fade.
-*/
-.in-app-browser .theme-transition,
-.in-app-browser .theme-transition * {
-  transition: none;
-}
-
 /* Tech badges (colors come from --tech-light / --tech-dark) */
 @layer components {
   .tech-badge {
