@@ -38,11 +38,6 @@
 html {
   background-color: var(--color-bg-1);
   scrollbar-width: none;
-  /*
-    Keep the native color scheme fixed. Toggling it on every theme change
-    makes mobile browsers repaint the canvas and can flash the page.
-  */
-  color-scheme: light dark;
 }
 
 html.dark {
@@ -66,6 +61,17 @@ html.dark {
 .no-transition,
 .no-transition * {
   transition: none !important;
+}
+
+/*
+  Meta's in-app browsers (Instagram/Facebook) use a custom Chromium WebView
+  whose compositor can flash the page while colors animate. The inline script
+  in index.html flags them, so theme changes there are applied instantly.
+  Normal browsers keep the fade.
+*/
+.in-app-browser .theme-transition,
+.in-app-browser .theme-transition * {
+  transition: none;
 }
 
 /* Tech badges (colors come from --tech-light / --tech-dark) */

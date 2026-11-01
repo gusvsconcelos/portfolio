@@ -3,12 +3,6 @@ import { useLayoutEffect, useState } from "react";
 type Theme = "dark" | "light" | "system";
 type ResolvedTheme = "dark" | "light";
 
-// Keep in sync with --color-bg-1 in App.css.
-const THEME_COLORS: Record<ResolvedTheme, string> = {
-  light: "#f9fafb",
-  dark: "#0c0f11",
-};
-
 function getStoredTheme(): Theme {
   try {
     const stored = localStorage.getItem("theme");
@@ -51,11 +45,6 @@ export function useTheme() {
 
       root.classList.toggle("dark", current === "dark");
       setResolvedTheme(current);
-
-      // Keep the browser UI color in sync with the active theme.
-      document
-        .querySelector('meta[name="theme-color"]')
-        ?.setAttribute("content", THEME_COLORS[current]);
     };
 
     apply();

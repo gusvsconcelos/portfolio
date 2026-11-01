@@ -10,8 +10,6 @@
       name="description"
       content="Portfólio de Gustavo Vasconcelos, Desenvolvedor Full Stack. Projetos, experimentos e estudos em desenvolvimento web e engenharia de software."
     />
-    <meta name="color-scheme" content="light dark" />
-    <meta name="theme-color" content="#f9fafb" />
 
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website" />
@@ -52,13 +50,12 @@
 
         document.documentElement.classList.toggle("dark", isDark);
 
-        // Keep the browser UI color in sync with the resolved theme,
-        // including when the stored choice differs from the OS preference.
-        const themeColor = isDark ? "#0c0f11" : "#f9fafb";
-
-        document
-          .querySelectorAll('meta[name="theme-color"]')
-          .forEach((meta) => meta.setAttribute("content", themeColor));
+        // Meta's in-app browsers ship a custom WebView whose compositor can
+        // flash the page while a full-viewport background animates, so the
+        // theme switches instantly there. Regular browsers keep the fade.
+        if (/Instagram|FBAN|FBAV|FB_IAB|; wv\)/i.test(navigator.userAgent)) {
+          document.documentElement.classList.add("in-app-browser");
+        }
 
         // Temporarily disable CSS transitions on initial load
         // to prevent unwanted animations during first paint
