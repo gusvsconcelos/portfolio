@@ -57,12 +57,6 @@ html.dark {
   display: none;
 }
 
-/* Disable transitions on initial load */
-.no-transition,
-.no-transition * {
-  transition: none !important;
-}
-
 /* Tech badges (colors come from --tech-light / --tech-dark) */
 @layer components {
   .tech-badge {

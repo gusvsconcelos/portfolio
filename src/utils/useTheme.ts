@@ -3,9 +3,11 @@ import { useEffect, useState } from "react";
 type Theme = "dark" | "light" | "system";
 type ResolvedTheme = "dark" | "light";
 
+const STORAGE_KEY = "theme";
+
 function getStoredTheme(): Theme {
   try {
-    const stored = localStorage.getItem("theme");
+    const stored = localStorage.getItem(STORAGE_KEY);
 
     return stored === "dark" || stored === "light" ? stored : "system";
   } catch {
@@ -15,16 +17,22 @@ function getStoredTheme(): Theme {
 
 function storeTheme(theme: Theme) {
   try {
-    localStorage.setItem("theme", theme);
+    localStorage.setItem(STORAGE_KEY, theme);
   } catch {
     // Storage can be unavailable in private browsing modes.
   }
 }
 
+function getInitialResolvedTheme(): ResolvedTheme {
+  return document.documentElement.classList.contains("dark") ? "dark" : "light";
+}
+
 export function useTheme() {
   const [theme, setTheme] = useState<Theme>(getStoredTheme);
 
-  const [resolvedTheme, setResolvedTheme] = useState<ResolvedTheme>("light");
+  const [resolvedTheme, setResolvedTheme] = useState<ResolvedTheme>(
+    getInitialResolvedTheme,
+  );
 
   useEffect(() => {
     const root = document.documentElement;

@@ -33,14 +33,26 @@
       content="Projetos, experimentos e estudos em desenvolvimento web e engenharia de software."
     />
 
-    <!-- Temporarily disable CSS transitions on initial load
-         to prevent unwanted animations during first paint -->
+    <!-- Apply the stored theme before the first paint.
+         Keep this in sync with src/utils/useTheme.ts. -->
     <script>
-      document.documentElement.classList.add("no-transition");
+      (() => {
+        let storedTheme = null;
 
-      window.addEventListener("load", () => {
-        document.documentElement.classList.remove("no-transition");
-      });
+        try {
+          storedTheme = localStorage.getItem("theme");
+        } catch {
+          // Storage can be unavailable in private browsing modes.
+        }
+
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+        const isDark =
+          storedTheme === "dark" || (storedTheme !== "light" && prefersDark);
+
+        document.documentElement.classList.toggle("dark", isDark);
+      })();
     </script>
   </head>
   <body>
