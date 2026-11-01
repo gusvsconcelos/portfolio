@@ -1,21 +1,22 @@
 import photo from "../../assets/profile.webp";
+import { site } from "../../data/site";
 import { Linkedin, Github, Instagram } from "../ui/Icons";
 
 const socialLinks = [
   {
-    href: "https://www.linkedin.com/in/gusvsconcelos/",
+    href: site.social.linkedin,
     label: "LinkedIn",
-    icon: <Linkedin />,
+    Icon: Linkedin,
   },
   {
-    href: "https://github.com/gusvsconcelos",
+    href: site.social.github,
     label: "GitHub",
-    icon: <Github />,
+    Icon: Github,
   },
   {
-    href: "https://www.instagram.com/gusvsconcelos/",
+    href: site.social.instagram,
     label: "Instagram",
-    icon: <Instagram />,
+    Icon: Instagram,
   },
 ];
 
@@ -35,25 +36,27 @@ export default function Header() {
       />
 
       {/*Username*/}
-      <p className="text-fg-2 transition-colors duration-300">@gusvsconcelos</p>
+      <p className="text-fg-2 transition-colors duration-300">
+        {site.username}
+      </p>
 
       {/*Full name*/}
       <h1 className="text-center text-3xl font-semibold text-fg-1 transition-colors duration-300">
-        Gustavo Vasconcelos
+        {site.name}
       </h1>
 
       {/*Links*/}
       <div className="flex gap-2 mb-4 text-accent">
-        {socialLinks.map(({ href, label, icon }) => (
+        {socialLinks.map(({ href, label, Icon }) => (
           <a
             key={label}
             href={href}
             target="_blank"
             rel="noopener noreferrer"
             aria-label={label}
-            className="p-1 rounded-sm hover:text-accent-hover transition-colors duration-300 hover:duration-[400ms] active:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            className="p-1 rounded-sm hover:text-accent-hover transition-colors duration-300 hover:duration-400 active:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
           >
-            {icon}
+            <Icon />
           </a>
         ))}
       </div>

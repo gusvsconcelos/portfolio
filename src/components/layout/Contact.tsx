@@ -1,5 +1,6 @@
 import Section from "../ui/Section";
 import Button from "../ui/Button";
+import { site } from "../../data/site";
 import { Send } from "lucide-react";
 
 export default function Contact() {
@@ -11,7 +12,7 @@ export default function Contact() {
       </h2>
 
       {/*Button*/}
-      <Button url="mailto:gustavo.vs.me@gmail.com">
+      <Button url={`mailto:${site.email}`}>
         <Send size={16} aria-hidden="true" /> <span>Contato</span>
       </Button>
     </Section>
